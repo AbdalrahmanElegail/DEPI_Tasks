@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Art Gallery - Exhibits</title>
+    <link rel="icon" href="images/logo.png">
+    <style>
+        body {
+            background-color: rgb(45, 49, 49);
+            color: rgb(204, 196, 181);
+            text-align: center;
+
+        }
+
+        img {
+            border: 5px solid rgb(39, 39, 39);
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        img:hover {
+            transform: scale(1.0055);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        button {
+            background-color: rgb(116, 116, 116);
+        }
+
+        button:hover {
+            color: rgb(116, 196, 154);
+            background-color: rgb(36, 97, 114);
+
+        }
+
+        #person {
+            color: rgb(118, 209, 225);
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Exhibits</h1>
+    </header>
+    <br><br>
+    <main>
+        <section>
+            <div class="exhibit">
+                <img src="images/exhibit1.jpg" alt="Exhibit 1" height="500" width="1400">
+                <h2>Abstract Landscapes</h2>
+
+                <p><b>Left Artwork:</b><small> Features swirling patterns resembling aerial views of terrain or water
+                        formations. Earthy tones dominate, giving a sense of natural textures.</small></p>
+
+                <p><b>Middle Artwork:</b><small> Highlights a vivid aerial perspective of land and water, with bright
+                        turquoise
+                        and brown hues creating a contrast between the natural and artificial elements.</small></p>
+
+                <p><b>Right Artwork:</b><small> Displays a close-up abstraction of river deltas or glacial patterns,
+                        with bold
+                        blue and black shades. The intricate textures suggest the flow and erosion of natural
+                        elements.</small></p>
+                <p id="person">Artist: <small><small>Lila Karim</small></small></p>
+
+            </div>
+            <br><br>
+            <hr>
+            <div class="exhibit">
+                <img src="images/exhibit2.jpg" alt="Exhibit 1" height="500" width="1400">
+                <h2>Agricultural Terraces</h2>
+                <p>Bird's-eye view of layered terraces, likely rice fields, with reflective water
+                    surfaces interspersed with greenery. The symmetry and intricate patterns create a sense of rhythm
+                    and balance.</p>
+                <p id="person">Artist: <small><small>Sophia Rivers</small></small></p>
+
+            </div>
+            <br><br>
+            <hr>
+            <div class="exhibit">
+                <img src="images/exhibit3.jpg" alt="Exhibit 1" height="500" width="1400">
+                <h2>Monochromatic Forests</h2>
+                <p><b>Left Artwork:</b><small> A small grayscale painting depicting a forest floor with fallen logs and
+                        branches.</small></p>
+                <p><b>Right Triptych:</b><small> Three interconnected panels feature a larger composition of uprooted
+                        trees and forest
+                        debris. The texture and shading convey destruction and renewal in a natural setting.</small></p>
+                <p id="person">Artist: <small><small>Ethan Morales</small></small></p>
+            </div>
+            <hr>
+        </section>
+        <br>
+        <nav>
+            <button type="button" onclick="window.open('index.html', '_blank')">Back to home</button>
+            <br><br>
+            <button type="button" onclick="window.open('artists.html', '_blank')">Artists</button>
+            <button type="button" onclick="window.open('contact.html', '_blank')">Contact us</button>
+
+        </nav>
+    </main>
+    <footer style="text-align: left;">
+        <p>&copy; 2024 Art Gallery</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Art Gallery - Contact</title>
+    <link rel="icon" href="images/logo.png">
+    <style>
+        body {
+            background-color: rgb(45, 49, 49);
+            color: rgb(204, 196, 181);
+            text-align: center;
+
+        }
+
+        button {
+            background-color: rgb(116, 116, 116);
+        }
+
+        button:hover {
+            color: rgb(116, 196, 154);
+            background-color: rgb(36, 97, 114);
+        }
+
+        input,
+        textarea {
+            background-color: rgb(38, 40, 40);
+            color: rgb(204, 196, 181);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <hr><br><br>
+    <main>
+        <section>
+            <form target="_blank" method="post">
+                <label for="name"><b>Name:</b></label>
+                <input type="text" id="name" name="name" autofocus placeholder="Enter a valid name"
+                    title="Ex: Abdalrahman Elegail" required>
+                <br><br><br>
+                <label for="email"><b>Email:</b></label>
+                <input type="email" id="email" name="email" placeholder="Enter a valid Email"
+                    title="Ex: abdalrahmanelegail@gmail.com" required>
+                <br><br><br>
+                <label for="message"><b>Message:</b></label>
+                <textarea id="message" name="message" placeholder="Text" required></textarea>
+                <br><br><br>
+                <button type="submit">Send</button>
+                <button type="reset">Clear</button>
+            </form>
+        </section>
+        <br><br>
+        <section>
+            <h2>Contact Information</h2>
+            <p><b>Email:</b> abdalrahmanelegail@gmail.com</p>
+            <p><b>Phone:</b> (+20) 01210967500</p>
+        </section>
+        <nav>
+            <button type="button" onclick="window.open('artists.html', '_blank')">Back to Artists</button>
+            <br><br>
+            <button type="button" onclick="window.open('index.html', '_blank')">Home</button>
+            <button type="button" onclick="window.open('exhibits.html', '_blank')">Exhibits</button>
+        </nav>
+    </main>
+    <footer style="text-align: left;">
+        <p>&copy; 2024 Art Gallery</p>
+    </footer>
+</body>
+
+</html>

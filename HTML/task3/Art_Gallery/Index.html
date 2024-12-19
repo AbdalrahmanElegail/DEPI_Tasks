@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Art Gallery">
+    <title>Art Gallery - Home</title>
+    <link rel="icon" href="images/logo.png">
+    <style>
+        body {
+            background-color: rgb(45, 49, 49);
+            color: rgb(204, 196, 181);
+            text-align: center;
+
+        }
+
+        img {
+            border: 5px solid rgb(39, 39, 39);
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        img:hover {
+            transform: scale(1.0055);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        button {
+            background-color: rgb(116, 116, 116);
+        }
+
+        button:hover {
+            color: rgb(116, 196, 154);
+            background-color: rgb(36, 97, 114);
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to our Art Gallery</h1>
+    </header>
+    <br>
+    <main>
+        <section>
+            <h2>Gallery Description: </h2>
+            <p><big>Discover a world of creativity and inspiration. Our gallery showcases a variety of exhibits from
+                    renowned and emerging artists, celebrating the beauty of natural landscapes and abstract
+                    representations of environmental themes. The artworks combine aerial perspectives, organic textures,
+                    and monochromatic studies to present an immersive visual exploration of nature's intricacies. Each
+                    piece invites viewers to contemplate the relationship between human intervention and the raw,
+                    unspoiled beauty of the earth.
+                </big></p>
+        </section>
+        <br><br>
+        <section>
+            <h2>Exhibits: </h2>
+            <div class="exhibits_list">
+                <img src="images/exhibit1.jpg" alt="Exhibit 1" height="500" width="1400">
+                <br><br>
+                <img src="images/exhibit2.jpg" alt="Exhibit 2" height="500" width="1400">
+                <br><br>
+                <img src="images/exhibit3.jpg" alt="Exhibit 3" height="500" width="1400">
+                <hr>
+            </div>
+        </section>
+        <br>
+        <nav>
+            <button type="button" onclick="window.open('artists.html', '_blank')">Meet the Artists</button>
+            </button><br><br>
+            <button type="button" onclick="window.open('exhibits.html', '_blank')">Exhibits</button>
+            <button type="button" onclick="window.open('contact.html', '_blank')">Contact us</button>
+
+        </nav>
+    </main>
+    <footer style="text-align: left;">
+        <p>&copy; 2024 Art Gallery</p>
+    </footer>
+</body>
+
+</html>
