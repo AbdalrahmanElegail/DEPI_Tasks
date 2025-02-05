@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Styled Elements</title>
+    <style>
+        .custom-button {
+            display: inline-block;
+            background-color: rgb(8, 67, 85);
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .box-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .box {
+            width: 50%;
+            padding: 20px;
+            background-color: rgb(53, 173, 206);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(130, 187, 198);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            min-width: 100px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .option {
+            margin: 5px;
+            cursor: pointer;
+            border: rgb(23, 88, 87) 3px solid;
+            border-radius: 5px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .two-column {
+            display: flex;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid black;
+            text-align: center;
+            border-radius: 15px;
+            margin: 5px;
+        }
+
+        .hover-text:hover {
+            color: rgb(54, 171, 157);
+        }
+
+        @media (max-width: 600px) {
+
+            .box-container,
+            .two-column {
+                flex-direction: column;
+            }
+
+            .box,
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Custom Button -->
+    <div class="custom-button">Custom Button</div>
+
+    <!-- Two Adjacent Boxes -->
+    <div class="box-container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+    </div>
+
+    <!-- Simple Dropdown Menu -->
+    <div class="dropdown">
+        <div class="custom-button">Dropdown</div>
+        <div class="dropdown-content">
+            <p class="option">Option 1</p>
+            <p class="option">Option 2</p>
+            <p class="option">Option 3</p>
+        </div>
+    </div>
+
+    <!-- Two-Column Layout -->
+    <div class="two-column">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+    </div>
+
+    <!-- Pseudo-class Example -->
+    <p class="hover-text">Hover me.</p>
+</body>
+
+</html>

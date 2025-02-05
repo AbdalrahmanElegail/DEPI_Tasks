@@ -1,0 +1,36 @@
+body{
+    background-color: #d4cabc;
+}
+.info {
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+}
+h1 , h2, p {
+    color: #044e55;
+    font-style: italic;
+}
+img {
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+img:hover {
+    border: #044e55 2px solid;
+}
+li:hover {
+    font-style: italic;
+    color: #903950;
+}
+ul {
+    color: #044e55;
+    list-style-type: square;
+}
+a {
+    color: #044e55;
+    text-decoration: none;
+}
+a:hover {
+    color: #4fb7b7;
+}
